@@ -15,7 +15,7 @@ h1{
 p{
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 header{
@@ -76,15 +76,123 @@ nav li a:hover{
 /* seccion about us */
 #aboutMe{
     width: 100%;
-    padding: 80px;
-    background-color: #082032;
+    padding: 100px;
+    background: rgb(8,32,50);
+    background: linear-gradient(180deg, rgba(8,32,50,1) 0%, rgba(51,71,86,1) 100%);
     display: flex;
 }
 
 .about-img{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img{
+    border-radius: 100%;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .about-txt{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.about-txt h2{
+    color: #FF4C29;
+    font-family: 'Raleway', sans-serif;
+    font-size:  2rem;
+    text-shadow: 2px 2px 13px black;
+    margin-bottom: 30px;
+
+}
+
+.about-txt p{
+    text-align: justify;
+    width: 90%;
+}
+
+/* seccion de habilidades con las cards */
+
+#habilidades{
+    background: rgb(51,71,86);
+    background: linear-gradient(180deg, rgba(51,71,86,1) 10%, rgba(78,95,108,1) 40%, rgba(227,227,227,1) 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+
+.conteiner-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+}
+
+.title-skills{
+    width: 100%;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-skills h3{
+    color: #dadada;
+    font-family: 'Raleway', sans-serif;
+    font-size:  2rem;
+    text-shadow: 2px 2px 13px black;
+
+}   
+
+
+.card{
+    width: 350px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #dadada;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;;
+    border-radius: 5%;
+    transition: transform 0.5s ease-out;
+}
+
+.card:hover{
+    transform: scale(1.05) ;
+}
+
+.card-p{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-p p{
+    color: #334756;
+}
+
+.card-img{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
